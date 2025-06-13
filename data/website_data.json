@@ -1,0 +1,23 @@
+{
+    "name": "Victor Jost",
+    "role": "Développeur Polyvalent",
+    "description": "Développeur dernière génération",
+    "social": {
+        "github": "https://github.com/victorjost",
+        "linkedin": "https://linkedin.com/in/victorjost"
+    },
+    "sections": [
+        {
+            "component": "about",
+            "data": "about.json"
+        },
+        {
+            "component": "experience",
+            "data": "experience.json"
+        },
+        {
+            "component": "projects",
+            "data": "projects.json"
+        }
+    ]
+}
