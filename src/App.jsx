@@ -1,11 +1,16 @@
 import { useState } from 'react'
+import website_data from '../data/website_data.json'
+import Navbar from './components/Navbar'
 
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <h1 className="text-3xl font-bold">Personnal Website</h1>
-    </div>
+    <main className="flex min-h-screen min-w-screen justify-evenly bg-neutral-800">
+      <Navbar website_data={website_data} />
+      <div>
+        
+      </div>
+    </main>
   )
 }
 
