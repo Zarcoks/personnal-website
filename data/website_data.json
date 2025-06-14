@@ -2,10 +2,18 @@
     "name": "Victor Jost",
     "role": "Développeur Polyvalent",
     "description": "Développeur dernière génération",
-    "social": {
-        "github": "https://github.com/victorjost",
-        "linkedin": "https://linkedin.com/in/victorjost"
-    },
+    "social": [
+        {
+            "name": "Github",
+            "url": "https://github.com/victorjost",
+            "icon_url": "github.png"
+        },
+        {
+            "name": "Linkedin",
+            "url": "https://linkedin.com/in/victorjost",
+            "icon_url": "linkedin.png"
+        }
+    ],
     "sections": [
         {
             "component": "about",
