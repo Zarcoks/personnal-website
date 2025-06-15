@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function SocialIcon({ color, url, name, svg_path }) {
+export default function SocialIcon({ color, url, svg_path }) {
     return (
         <a 
             href={url} 
