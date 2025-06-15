@@ -1,4 +1,4 @@
-const assets_path = "../assets/"
+import SocialIcon from './social/SocialIcon';
 
 function Navbar({ website_data }) {
     return (
@@ -14,17 +14,20 @@ function Navbar({ website_data }) {
                     </li>
                 ))}
             </ul>
-            <ul>
+            <ul className="flex my-3">
                 {website_data.social.map((social) => (
-                    <li key={social.name} className="my-4">
-                        <a href={social.url} className="text-lime-400 font-semibold text-2xl">
-                            <img src={assets_path + social.icon_url} alt={social.name}/>
-                        </a>
+                    <li key={social.name} className="mr-10">
+                        <SocialIcon 
+                            color="lime-400" 
+                            url={social.url} 
+                            name={social.name}
+                            svg_path={social.svg_path}
+                        />
                     </li>
                 ))}
             </ul>
         </nav>
-    )
+    );
 }
 
 export default Navbar
