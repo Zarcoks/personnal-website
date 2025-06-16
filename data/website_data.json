@@ -16,19 +16,19 @@
     ],
     "sections": [
         {
-            "key": "about",
-            "name": "A propos",
-            "data": "about.json"
+            "id": "about",
+            "name": "A propos de moi",
+            "component": "About"
         },
         {
-            "key": "experience",
+            "id": "experience",
             "name": "Expérience",
-            "data": "experience.json"
+            "component": "Experience"
         },
         {
-            "key": "projects",
+            "id": "projects",
             "name": "Projets",
-            "data": "projects.json"
+            "component": "Projects"
         }
     ]
 }
