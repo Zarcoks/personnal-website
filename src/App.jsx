@@ -1,10 +1,16 @@
-import { useState, lazy, Suspense } from 'react'
+import { useState, useEffect, lazy, Suspense } from 'react'
 import website_data from '../data/website_data.json'
 import Navbar from './components/Navbar'
 import Section from './components/sections/Section'
 
 function App() {
   const [sections, setSections] = useState(website_data.sections)
+
+  useEffect(() => {
+    if (website_data?.name) {
+      document.title = website_data.name
+    }
+  }, [])
 
   return (
     <main className="min-h-screen min-w-screen bg-neutral-800">
