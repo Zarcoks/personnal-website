@@ -1,4 +1,8 @@
+import aboutData from '../../../data/about.json';
+
 function About() {
+    const { skills = [] } = aboutData;
+
     return (
         <>
             <p className="text-neutral-100 my-3">
@@ -13,7 +17,16 @@ function About() {
             <p className="text-neutral-100 my-3">
             Voici un bref résumé des technologies sur lesquelles j'ai pu travailler.
             </p>
-            <h2>TODO</h2>
+            <div className="flex flex-wrap gap-7 mt-4 justify-center">
+                {skills.map((skill) => (
+                    <span
+                        key={skill}
+                        className="px-4 py-2 bg-lime-400 text-neutral-900 font-semibold rounded-md transition-colors duration-300 hover:bg-transparent hover:text-lime-400"
+                    >
+                        {skill}
+                    </span>
+                ))}
+            </div>
         </>
     )
 }
